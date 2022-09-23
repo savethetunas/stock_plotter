@@ -5,9 +5,11 @@
 
 
 mode = '' or ''
+while mode != 'horizontal' and mode != 'vertical':
+    mode = input('Enter stock plotter mode:\n')
 
-while mode != 'v' and mode != 'h':
-    mode = input('Enter mode (horizontal or vertical):\n')
-
-print(mode)
-
+stock_string = input('Enter stock string:\n')
+length = len(stock_string) % 2
+while length != 0:
+    stock_string = input('Enter stock string:\n')
+    length = len(stock_string) % 2
