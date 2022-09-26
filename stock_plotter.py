@@ -31,3 +31,5 @@ if mode == 'vertical':
         print('#' * 19)
         exit()
 
+
+
