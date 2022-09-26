@@ -37,7 +37,7 @@ if mode == 'horizontal':
     print('##' + '#' * int(length_div_two) + '##')
 
     rows = 0
-    while rows < 16:
+    while rows < 17:
         to_print = "# "
         count = 0
         while count < len(string):
