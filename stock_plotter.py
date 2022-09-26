@@ -31,5 +31,25 @@ if mode == 'vertical':
         print('#' * 19)
         exit()
 
+if mode == 'horizontal':
+    length_div_two = len(string) / 2
 
+    print('##' + '#' * int(length_div_two) + '##')
+
+    rows = 0
+    while rows < 16:
+        to_print = "# "
+        count = 0
+        while count < len(string):
+            if string[count] == 'u':
+                to_print += '+'
+            if string[count] == 'd':
+                to_print += '-'
+            count += 1
+        to_print += ' ' * (int(length_div_two) - count) + " #"
+
+        print(to_print)
+        rows += 1
+
+    print('##' + '#' * int(length_div_two) + '##')
 
